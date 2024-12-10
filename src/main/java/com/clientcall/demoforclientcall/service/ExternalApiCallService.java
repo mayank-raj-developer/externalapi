@@ -14,7 +14,7 @@ public class ExternalApiCallService {
     private RestTemplate restTemplate;
     public void externalCall()
     {
-        var temp=restTemplate.exchange("http://localhost:8500/mock/sample", HttpMethod.GET, HttpEntity.EMPTY, String.class);
+        var temp=restTemplate.exchange("http://localhost:8500/mock/samplehttps://github.com/mayank-raj-developer/demo/pull/2", HttpMethod.GET, HttpEntity.EMPTY, String.class);
         //log.info("Value of external api : {}",(temp));
         System.out.println(temp.getBody());
     }
